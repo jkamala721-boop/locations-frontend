@@ -1,0 +1,198 @@
+html {
+scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #0F172A;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563EB;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+color: #2563EB;
+}
+button {
+    background: #2563EB;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { 
+    transform: translateY(-3px);
+ box-shadow: 0px 0px 25rgba(37,99,235,0.6);
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.hero-left {
+    max-width: 600px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.dashboard {
+    background: #1E293B;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.score {
+    background: #2563EB;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.section {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #1E293B;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 30px rgba(37, 99, 235, 0.3);
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.stat h3 {
+    font-size: 50px;
+    color: #2563EB;
+}
+
+.waitlist {
+    padding: 100px 80px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat h3 {
+    font-size: 50px;
+    color: #2563EB;
+}
+.dashboard {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+select {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+}
+.card{
+    max-width: 700px;
+    margin: auto;
+}
+.progress-container {
+
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.progress-bar {
+
+    width: 100%;
+    height: 18px;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.progress-fill {
+
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    transition: width 0.5s ease;
+
+}
