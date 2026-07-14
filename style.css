@@ -46,7 +46,7 @@ button {
 }
 button:hover { 
     transform: translateY(-3px);
- box-shadow: 0px 0px 25rgba(37,99,235,0.6);
+ box-shadow: 0px 0px 25px rgba(37,99,235,0.6);
 }
 .hero {
     display: flex;
@@ -72,7 +72,8 @@ button:hover {
     background: #1E293B;
     padding: 30px;
     border-radius: 20px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .score {
@@ -83,7 +84,7 @@ button:hover {
 }
 
 .section {
-    padding: 100px 80px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -116,7 +117,7 @@ button:hover {
 }
 
 .waitlist {
-    padding: 100px 80px;
+    padding: 40px 20px;
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
@@ -126,7 +127,8 @@ input {
     display: block;
     margin: 15px auto;
     padding: 15px;
-    width: 350px;
+    width:100%;
+    max-width: 350px;
     border-radius: 10px;
     border: none;
 }
@@ -163,7 +165,8 @@ select {
     display: block;
     margin: 15px auto;
     padding: 15px;
-    width: 350px;
+    width:100%;
+   max-width: 350px;
     border-radius: 10px;
     border: none;
 }
@@ -194,5 +197,79 @@ select {
     width: 0%;
     background: #2563eb;
     transition: width 0.5s ease;
+
+}
+@media (max-width: 768px) {
+
+    .navbar {
+       display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-left p {
+        font-size: 18px;
+    }
+
+    .dashboard {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    input,
+    select {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .waitlist {
+        padding: 50px 20px;
+    }
 
 }
